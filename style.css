@@ -1,0 +1,224 @@
+/** Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  grid-template-rows: repeat(4, auto); /* 3 rows */
+  grid-template-rows: 400px 520px 520px 620px;
+  gap: 20px; /* space between the boxes */
+}
+
+h1{
+  font-family: 'Courier New', monospace;
+  color: black;
+}
+
+h2{
+  font-family: 'Courier New', monospace;
+  color: black;
+  margin-bottom: 2px;
+}
+
+body{
+  background-color: #BAC9DB;
+  font-family: 'Courier New', monospace;
+  color: black;
+}
+
+p{
+  font-family: 'Courier New', monospace;
+  color: black;
+  margin-top: 0.2px;
+  margin-bottom: 0.2px;
+}
+
+.listdetails{
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.academic_interests {
+  background-color: #9EB0C5;
+}
+
+#aboutme_lists{
+  font-family: 'Courier New', monospace;
+  color: black;
+  margin-top:0.5px;
+}
+
+
+html,
+body {
+  font-family: 'Courier New', monospace;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+/** Layout Styles */
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+/** Main Styles */
+main {
+  padding: 16px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.footerdetails{
+  font-family: 'Courier New', monospace;
+  color: black;
+  align-items: center;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 80px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: left; /* Align the image to the right */
+  margin-bottom: 20px; /* Add spacing between the image and the grid */
+}
+
+.image-wrapper img {
+  width: 500px; /* Adjust the width of the image */
+  height: auto;
+  display: inline-block;
+}
+
+.img-container{
+  display: flex;
+  justify-content:center;
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: column; /* Stack the icon-text items vertically */
+  gap: 20px; /* Space between each row */
+}
+
+.icon-text-item {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Vertically align text with icon */
+}
+
+.icon {
+  width: 50px; /* Adjust icon size */
+  height: 50px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.text {
+  font-size: 0.8em; /* Adjust the text size */
+  font-family: 'Courier New', monospace;
+}
+
+/** Inputs */
+
+.section {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding: 24px 24px;
+  border-radius: 8px;
+
+  background: #9EB0C5;
+  color: black;
+}
+
+.section-1 {
+  background: #9EB0C5;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+button {
+  display: block;
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 8px;
+
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  text-decoration: none;
+
+  margin: 1rem 0;
+  padding: 8px 8px;
+
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+
+  color: black;
+  text-align: center;
+
+  transition: background 0.1s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.submitbutton{
+  width:120px;
+  display: flex;
+}
+
+.navbutton{
+  position: fixed;
+  top: 25px;
+  left: 50px;
+  width:150px;
+  display: flex;
+  justify-self: right;
+}
+
+form {
+  margin-top: 100px;
+  width: 800px; /* Set a maximum width for the form */
+  height: 600px;
+  margin: 20px auto; /* Center the form */
+  padding: 20px; /* Padding around the form */
+  border: 1px solid #ccc; /* Border around the form */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #9EB0C5; /* Light background color */
+}
+
+label {
+  display: block; /* Make labels block-level to stack with inputs */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input fields */
+  margin-bottom: 15px; /* Space between input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
+}
